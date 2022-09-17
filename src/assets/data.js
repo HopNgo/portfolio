@@ -4,7 +4,7 @@ export const projects = [
     cover: "https://media.giphy.com/media/e4YsljlduKuKaMatVa/giphy.gif",
     title: "Shoe Shop Web E-Commerce",
     description:
-      "This project is very special to me because I used it to finish the final project of the course in my university.It serves two users: Admin and Customer. The key features such as: fully responsive, login/logout, register, show products, show detail product, filter products, CRUD product, add to cart, send email,...",
+      "This project is very special to me because I used it to finish the final project of the course in my university.It serves two users: Admin and Customer. The key features such as:login(Firebase + Google/Facebook), logout, register, show products, show detail product, filter products, CRUD comments, CRUD product, add to cart, send email,...",
     tags: [
       "SCSS",
       "Reactjs",
