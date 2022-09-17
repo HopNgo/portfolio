@@ -1,13 +1,12 @@
 import { useEffect } from "react";
-import "./App.css";
+import avatar from "./assets/images/avatar.jpg";
 import About from "./components/About";
 import Banner from "./components/Banner";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Skill from "./components/Skill";
-import avatar from "./assets/images/avatar.jpg";
-import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
+import Skill from "./components/Skill";
 
 function App() {
   const callback = (entries) => {

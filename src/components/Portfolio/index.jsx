@@ -7,7 +7,7 @@ import UnderlineBase from "../../styled-components/UnderlineBase";
 import Project from "./Project";
 
 const PortfolioWrapper = styled.div`
-  padding: 80px;
+  padding: 80px 20px;
   background-color: var(--color-bg-2);
 `;
 
@@ -17,6 +17,15 @@ const PortfolioHeaderLine = styled(UnderlineBase)``;
 
 const PortfolioBtn = styled(ButtonBase)`
   padding: 10px 20px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 13px;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (max-width: 479px) {
+    font-size: 13px;
+  }
 `;
 
 const PortfolioFooter = styled.div`

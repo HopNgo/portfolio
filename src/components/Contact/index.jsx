@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 import ButtonBase from "../../styled-components/ButtonBase";
 
 const ContactWrapper = styled.div`
-  padding: 80px 0;
+  padding: 80px 20px;
   background-color: var(--color-bg-1);
 `;
 
@@ -20,6 +20,13 @@ const ContactHeaderLine = styled(UnderlineBase)``;
 
 const ContactContent = styled(ContentBase)`
   gap: 270px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    gap: 30px;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    gap: 50px;
+    flex-direction: column;
+  }
 `;
 
 const ContactInfo = styled.div`
@@ -29,12 +36,28 @@ const ContactInfo = styled.div`
   h3 {
     font-size: 27px;
     letter-spacing: 1px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 25px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 479px) {
+      font-size: 20px;
+    }
   }
 `;
 
 const ContactInfoItem = styled.div`
   display: flex;
   gap: 15px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    font-size: 13px;
+  }
+
   span {
     letter-spacing: 1.5px;
     a {
@@ -54,16 +77,33 @@ const ContactForm = styled.div`
   display: flex;
   flex-direction: column;
   flex-basis: 500px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-basis: 400px;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    flex-basis: 300px;
+  }
   h3 {
     margin-bottom: 30px;
     font-size: 27px;
     letter-spacing: 1px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 25px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 479px) {
+      font-size: 20px;
+    }
   }
   form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    @media (min-width: 0px) and (max-width: 767px) {
+      width: 95%;
+    }
     input,
     textarea {
       background-color: transparent;
@@ -78,6 +118,12 @@ const ContactForm = styled.div`
       &::placeholder {
         font-size: 16px;
         color: white;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          font-size: 14px;
+        }
+        @media (min-width: 0px) and (max-width: 767px) {
+          font-size: 13px;
+        }
       }
       &:focus {
         border-bottom: none;
@@ -86,14 +132,26 @@ const ContactForm = styled.div`
       &:focus::placeholder {
         color: transparent;
       }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+      }
+      @media (min-width: 0px) and (max-width: 767px) {
+        font-size: 13px;
+      }
     }
+
     textarea {
       resize: none;
     }
   }
 `;
 
-const ContactBtn = styled(ButtonBase)``;
+const ContactBtn = styled(ButtonBase)`
+  margin-top: 30px;
+  @media (min-width: 0px) and (max-width: 1024px) {
+    font-size: 14px;
+  }
+`;
 
 const Contact = () => {
   const formRef = useRef();

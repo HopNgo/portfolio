@@ -11,7 +11,7 @@ import UnderlineBase from "../../styled-components/UnderlineBase";
 import HeaderBase from "../../styled-components/HeaderBase";
 
 const SkillWrapper = styled.div`
-  padding: 80px 0;
+  padding: 80px 20px;
   background-color: var(--color-bg-1);
 `;
 
@@ -25,14 +25,25 @@ const SkillList = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
+  @media (min-width: 1440px) {
+    max-width: 1900px;
+    margin: 50px auto 0px;
+  }
 `;
 
 const SkillItem = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
+  flex-basis: 200px;
   align-items: center;
   gap: 10px 0;
+  text-align: center;
+  @media (min-width: 480px) and (max-width: 768px) {
+    flex-basis: 150px;
+  }
+  @media (max-width: 479px) {
+    flex-basis: 100px;
+  }
 `;
 
 const Skill = () => {

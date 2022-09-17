@@ -28,6 +28,12 @@ const FooterIcons = styled.div`
 
 const FooterCopyright = styled.p`
   letter-spacing: 1px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    font-size: 13px;
+  }
   strong {
     margin-left: 5px;
   }

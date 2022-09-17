@@ -9,11 +9,30 @@ const ProjectWrapper = styled.div`
   border-radius: 7px;
   border-bottom: 1px dashed white;
   padding: 80px 0;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    gap: 30px;
+    flex-direction: row-reverse;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    gap: 30px;
+    flex-direction: column;
+  }
+  @media (max-width: 479px) {
+    gap: 30px;
+    flex-direction: column;
+  }
 `;
 const PropjectCover = styled.div`
   width: 585px;
   height: 333px;
   border-radius: 10px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 400px;
+    height: 300px;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    width: 100%;
+  }
   a {
     img {
       border-radius: 10px;
@@ -35,12 +54,36 @@ const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-basis: 400px;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    flex-basis: 300px;
+  }
   h2 {
     letter-spacing: 1.5px;
-    line-height: 20px;
+    line-height: 30px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 23px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 19px;
+    }
+    @media (max-width: 479px) {
+      font-size: 17px;
+    }
   }
   p {
     font-size: 17px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 15px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 479px) {
+      font-size: 13px;
+    }
   }
   ul {
     margin-left: 35px;
@@ -48,6 +91,15 @@ const ProjectInfo = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px 60px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 15px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 479px) {
+      font-size: 13px;
+    }
   }
   a {
     display: block;
@@ -58,6 +110,15 @@ const ProjectInfo = styled.div`
 
 const ProjectBtn = styled(ButtonBase)`
   width: 100%;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    font-size: 15px;
+  }
+  @media (max-width: 479px) {
+    font-size: 13px;
+  }
 `;
 
 const Project = ({ project }) => {

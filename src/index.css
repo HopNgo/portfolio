@@ -12,12 +12,13 @@
 :root{
   --color-bg-1: #102a42;
   --color-bg-2: #072026;
-  
 }
 body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
+
+
 
 @keyframes slideInLeft {
   from {
@@ -132,5 +133,38 @@ body {
     -webkit-transform: translateY(0);
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
   }
 }

@@ -5,7 +5,7 @@ import HeaderBase from "../../styled-components/HeaderBase";
 import UnderlineBase from "../../styled-components/UnderlineBase";
 
 const AboutWrapper = styled.div`
-  padding: 80px 0;
+  padding: 80px 20px;
   background-color: var(--color-bg-2);
 `;
 
@@ -20,12 +20,36 @@ const AboutInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px 0;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex: 400px 0;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    flex: none;
+  }
   h3 {
     font-size: 27px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 25px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 479px) {
+      font-size: 20px;
+    }
   }
   p {
     line-height: 30px;
     color: #aaaaaa;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 15px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 479px) {
+      font-size: 13px;
+    }
   }
 `;
 
@@ -34,13 +58,37 @@ const AboutEducation = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px 0;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex: 400px 0;
+  }
+  @media (min-width: 0px) and (max-width: 767px) {
+    flex: none;
+  }
   h3 {
     font-size: 27px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 25px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 479px) {
+      font-size: 20px;
+    }
   }
   p,
   span {
     line-height: 30px;
     letter-spacing: 2px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 15px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 479px) {
+      font-size: 13px;
+    }
   }
   span {
     color: #aaaaaa;
