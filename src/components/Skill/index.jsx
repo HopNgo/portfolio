@@ -6,6 +6,7 @@ import jqueryIcon from "../../assets/images/jquery.png";
 import tailwindIcon from "../../assets/images/tailwind.png";
 import sqlIcon from "../../assets/images/sql.png";
 import graphqlIcon from "../../assets/images/graphql.png";
+import nextJSIcon from "../../assets/images/next-js-white.svg";
 import apiIcon from "../../assets/images/api.png";
 import UnderlineBase from "../../styled-components/UnderlineBase";
 import HeaderBase from "../../styled-components/HeaderBase";
@@ -106,6 +107,10 @@ const Skill = () => {
             style={{ fontSize: "32px" }}
           />
           <span>React/Redux</span>
+        </SkillItem>
+        <SkillItem>
+          <img src={nextJSIcon} alt="" width="32px" />
+          <span>NextJS</span>
         </SkillItem>
 
         <SkillItem>

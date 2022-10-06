@@ -22,34 +22,6 @@ export const projects = [
   },
   {
     id: 2,
-    cover: "https://media.giphy.com/media/XDaAa4mt3XocjjsXta/giphy.gif",
-    title: "Learn Vocabulary Website",
-    description:
-      "This project I built to help everyone to learn vocabs by choose one correct answer in four answer. It has key features such as: show list vobabs, CRUD vocabs,..",
-    tags: [
-      "Material UI",
-      "Reactjs",
-      "ContextAPI",
-      "Router Dom V6",
-      "Nodejs",
-      "Express",
-      "MongoDB",
-    ],
-    liveLink: "https://learn-vocab-ngo-hop.netlify.app/",
-    ghLink: "https://github.com/HopNgo/Lean-Vocab-Frontend.git",
-  },
-  {
-    id: 3,
-    cover: "https://media.giphy.com/media/7MMttAkta7WQ0Nue4W/giphy.gif",
-    title: "Spotify Web Player",
-    description:
-      "This project lists songs and allow us to control music player in the same as Zing MP3.",
-    tags: ["Reactjs", "Tailwind CSS", "Typescript"],
-    liveLink: "https://shopify-ngo-hop-app.netlify.app/",
-    ghLink: "https://github.com/HopNgo/shopify-ts-taiwind-app.git",
-  },
-  {
-    id: 4,
     cover: "https://media.giphy.com/media/Bh6dfLlmUMd0XmMSA1/giphy.gif",
     title: "Trello Clone Website",
     description:
@@ -67,7 +39,17 @@ export const projects = [
     ghLink: "https://github.com/HopNgo/trello-clone-app-frontend.git",
   },
   {
-    id: 5,
+    id: 3,
+    cover: "https://media.giphy.com/media/195XttzwpHIkmczDBT/giphy.gif",
+    title: "Health & Fitness Blogs",
+    description:
+      "I build this project to learn and practice NextJS framework. It shows some blogs about health & fitness education to help people take better care of theỉr health.",
+    tags: ["NextJS", "MUI v5", "Cloudinary"],
+    liveLink: "https://health-fitness-blog.vercel.app/",
+    ghLink: "https://github.com/HopNgo/health-fitness-blog-nextjs.git",
+  },
+  {
+    id: 4,
     cover: "https://media.giphy.com/media/I37dIWQDCievtfqs6A/giphy.gif",
     title: "Book Website",
     description:
@@ -83,4 +65,33 @@ export const projects = [
     liveLink: "https://book-app-ngo-hop.netlify.app/",
     ghLink: "https://github.com/HopNgo/Book-Graphql-Frontend.git",
   },
+  {
+    id: 5,
+    cover: "https://media.giphy.com/media/XDaAa4mt3XocjjsXta/giphy.gif",
+    title: "Learn Vocabulary Website",
+    description:
+      "This project I built to help everyone to learn vocabs by choose one correct answer in four answer. It has key features such as: show list vobabs, CRUD vocabs,..",
+    tags: [
+      "Material UI",
+      "Reactjs",
+      "ContextAPI",
+      "Router Dom V6",
+      "Nodejs",
+      "Express",
+      "MongoDB",
+    ],
+    liveLink: "https://learn-vocab-ngo-hop.netlify.app/",
+    ghLink: "https://github.com/HopNgo/Lean-Vocab-Frontend.git",
+  },
+  {
+    id: 6,
+    cover: "https://media.giphy.com/media/7MMttAkta7WQ0Nue4W/giphy.gif",
+    title: "Spotify Web Player",
+    description:
+      "This project lists songs and allow us to control music player in the same as Zing MP3.",
+    tags: ["Reactjs", "Tailwind CSS", "Typescript"],
+    liveLink: "https://shopify-ngo-hop-app.netlify.app/",
+    ghLink: "https://github.com/HopNgo/shopify-ts-taiwind-app.git",
+  },
 ];
+
